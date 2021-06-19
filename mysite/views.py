@@ -22,7 +22,7 @@ def page3(request):
         <body>
             <h1>Python no Heroku - SOCPS</h1>
             <h2>Página 3</h2>
-            <a href="../">index</a>
+            <a href="../">index</a><br>
             <a href="../page5/">page5</a>
         </body>
     </html>
@@ -34,7 +34,7 @@ def page4(request):
     return render(request, "page4.html")
 
 def page5(request):
-    now = datetime.strftime('%H:%M %d/%m/%Y')
+    now = datetime.now().strftime('%H:%M %d/%m/%Y')
     html = f'''
     <html>
         <head><title>Página 5</title></head>
@@ -42,8 +42,8 @@ def page5(request):
             <h1>Python no Heroku - SOCPS</h1>
             <h2>Página 5</h2>
             <p>Agora: {now}</p>
-            <a href="../page3/">page3</a><br>
-            <a href="../page4/">page4</a>
+            <a href="../page3/">page3 (dinâmica)</a><br>
+            <a href="../page4/">page4 (estática)</a>
         </body>
     </html>
     '''
