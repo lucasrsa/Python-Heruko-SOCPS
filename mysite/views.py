@@ -23,7 +23,7 @@ def page3(request):
             <h1>Python no Heroku - SOCPS</h1>
             <h2>Página 3</h2>
             <a href="../">index</a><br>
-            <a href="../page5/">page5</a>
+            <a href="../page5/">page5 (dinâmica)</a>
         </body>
     </html>
     '''
@@ -41,7 +41,7 @@ def page5(request):
         <body>
             <h1>Python no Heroku - SOCPS</h1>
             <h2>Página 5</h2>
-            <p>Agora: {now}</p>
+            <p>Agora (UTC): {now}</p>
             <a href="../page3/">page3 (dinâmica)</a><br>
             <a href="../page4/">page4 (estática)</a>
         </body>
